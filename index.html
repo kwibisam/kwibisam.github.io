@@ -4,42 +4,275 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Kwibisam</title>
+    <title>Kwibisa Mwene's Portfolio</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;600;700;800;900&family=Kanit:wght@800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap Icon-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.1/font/bootstrap-icons.css"
+    />
+    <!-- Animate CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <!-- SplideJs Styles -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.2.1/dist/css/splide.min.css"
+    />
+    <!-- App Styles -->
+    <link rel="stylesheet" href="styles/app.css" />
   </head>
   <body>
-    <header>
-      <section class="navbar">
-        <div class="content">
-          <div class="h1"><a href="index.html">KM</a></div>
-          <div class="nav">
-            <nav>
-              <ul>
-                <li>
-                  <a href="">About</a>
-                </li>
-                <li>
-                  <a href="">Portifolio</a>
-                </li>
-                <li>
-                  <a href="">Contact</a>
-                </li>
-              </ul>
-            </nav>
+    <header class="header">
+      <div class="animate__animated animate__slideInDown">
+        <div class="container">
+          <h1 class="header__logo">
+            <a href="/"> km </a>
+          </h1>
+          <nav class="navigation">
+            <ul>
+              <li><a href="#portfolio">Portfolio</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+         
+          </div>
+          <div class="header__mobile">
+            <button id="navigation-button">
+              <i class="bi bi-list"></i>
+            </button>
           </div>
         </div>
-      </section>
-      <section class="banner">
-        <h1>Kwibisa Mwene</h1>
-        <p>Software Developer</p>
-      </section>
+      </div>
     </header>
-    <main></main>
-    <footer>
-      <p>
-        designed and <br />
-        developed by Kwibisam. &copy;2022
-      </p>
+
+    <!-- Hero Section -->
+
+    <section class="hero">
+      <div class="container">
+        <div class="hero__wrapper">
+          <h1 class="hero__title animate__animated animate__slideInDown">
+            Absolute Coding<br />
+            At its Finest.
+          </h1>
+          <p class="hero__content animate__animated animate__slideInDown">
+            Hi Im Kwibisa Mwene and Im a Software Developer<br />
+            Providing services for Web and Mobile App development.
+          </p>
+          
+        
+          <div class="hero__social animate__animated animate__slideInUp">
+            <ul class="social">
+              <li>
+                <a href="https://www.linkedin.com/in/kwibisa-mwene-7519a616b/"
+                  ><i class="bi bi-linkedin"></i
+                ></a>
+              </li>
+              <li>
+                <a href="https://github.com/kwibisam"
+                  ><i class="bi bi-github"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section
+      class="section animate__animated animate__slideInUp"
+      id="portfolio"
+    >
+      <div class="container">
+        <div class="section__header section__header--center">
+          <h2 class="section__title">Portfolio</h2>
+          <p class="section__subtitle">Technical Projects</p>
+        </div>
+        <div class="portfolio">
+          <div class="portfolio__box">
+            <div class="portfolio__img">
+              <img src="assets/port-02.PNG" alt="Portfolio Items" />
+            </div>
+            <div class="portfolio__info">
+              <h3 class="portfolio__title">Path Finding Visualiser</h3>
+              <p class="portfolio__content">
+                A JavaScript application visualising four different path finding
+                algorithms; A*, Dijkstra, DFS and BFS
+              </p>
+              <a class="portfolio__link" href="https://kwibisam.github.io/algovis/"
+                >See Work <i class="bi bi-arrow-right"></i
+              ></a>
+            </div>
+          </div>
+          <div class="portfolio__box">
+            <div class="portfolio__img">
+              <img src="assets/port-01.PNG" alt="Portfolio Items" />
+            </div>
+            <div class="portfolio__info">
+              <h3 class="portfolio__title">Movies API</h3>
+              <p class="portfolio__content">
+                A fullstack webapp using tmdb movies API, .NET backend and React
+                JS frontend. UI with bootstrap. The app features a homepage,
+                seach bar and a details page with more features to be added.
+              </p>
+              <a class="portfolio__link" href="https://github.com/kwibisam/movies-api"
+                >See Work <i class="bi bi-arrow-right"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="portfolio__box">
+            <div class="portfolio__img">
+              <img src="assets/port -03.jpg" alt="Portfolio Items" />
+            </div>
+            <div class="portfolio__info">
+              <h3 class="portfolio__title">Music Player</h3>
+              <p class="portfolio__content">
+                Simple android music player app built in Java.
+              </p>
+              <a class="portfolio__link" href="https://github.com/kwibisam/musicplayer"
+                >See Work <i class="bi bi-arrow-right"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="about">
+          <div class="about__left">
+            <div class="section__header">
+              <h2 class="section__title">About</h2>
+              <p class="section__subtitle">Few things about me</p>
+            </div>
+            <p class="about__bio">
+              Im a Computer Science graduate from Mulungushi University
+              specialised in Software Development. Ive been working on some
+              personal projects since completion in July 2022 to kick start some
+              freelance work.
+            </p>
+            <h4 class="about__skillsTitle">Skills</h4>
+            <ul class="about__skillsList">
+              <li>Java</li>
+              <li>Python</li>
+              <li>Spring Boot</li>
+              <li>Django</li>
+              <li>C#</li>
+              <li>.NET</li>
+              <li>React</li>
+              <li>JavaScript</li>
+              <li>TypeScript</li>
+            </ul>
+          </div>
+          <div class="about__right">
+            <img src="assets/avatar.png" alt="Profile Picture" v />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="contact">
+          <div class="contact__left">
+            <div class="section__header">
+              <h2 class="section__title">Contact Me</h2>
+              <p class="section__subtitle">Reach out to me</p>
+            </div>
+            <div class="contact__info">
+              <p>Email Me:</p>
+              <a href="mailto:">kwibisam04@gmail.com</a>
+              <a href="tel:0967433734"></a>
+            </div>
+
+            <div class="contact__info">
+              <p>Call or WhatsApp:</p>
+              <a href="tel:">0967433734</a>
+            </div>
+
+            <div class="contact__info">
+              <p>Follow Me:</p>
+              <ul class="social">
+                <li>
+                  <a href="https://www.linkedin.com/in/kwibisa-mwene-7519a616b/"
+                    ><i class="bi bi-linkedin"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="https://github.com/kwibisam"
+                    ><i class="bi bi-github"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="contact__right">
+            <form class="contact__form" action="#" method="post">
+              <div class="contact__fields">
+                <label for="name">Name</label>
+                <input
+                  type="name"
+                  name="name"
+                  id="name"
+                  placeholder="Your Name"
+                />
+              </div>
+              <div class="contact__fields">
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="Email Address"
+                />
+              </div>
+              <div class="contact__fields">
+                <label for="message">Message</label>
+                <textarea
+                  name="message"
+                  id="message"
+                  placeholder="Write Message..."
+                ></textarea>
+              </div>
+              <div class="contact__fields">
+                <button class="btn btn--main" type="submit">
+                  Send Message <i class="bi bi-arrow-right"></i>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer__copyright">
+        <p>
+          <a href="https://github.com/kwibisam">kwibisam</a>
+        </p>
+      </div>
     </footer>
+
+    <!-- SplideJs v3 -->
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.2.1/dist/js/splide.min.js"></script>
+    <!-- Scroll Reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- App Scripts -->
+    <script src="scripts/app.js"></script>
   </body>
 </html>
