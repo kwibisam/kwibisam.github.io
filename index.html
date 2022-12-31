@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kwibisa Mwene's Portfolio</title>
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon" />
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -37,7 +38,7 @@
       <div class="animate__animated animate__slideInDown">
         <div class="container">
           <h1 class="header__logo">
-            <a href="index.html"> km </a>
+            <a href="/"> K</a>
           </h1>
           <nav class="navigation">
             <ul>
@@ -45,7 +46,14 @@
               <li><a href="#about">About</a></li>
               <li><a href="#contact">Contact</a></li>
             </ul>
-         
+            <a class="btn btn--main" href="assets/kwibisa_resume.pdf" download>
+              <i class="bi bi-download"></i> Resume
+            </a>
+          </nav>
+          <div class="header__resume">
+            <a class="btn btn--main" href="assets/kwibisa_resume.pdf" download>
+              <i class="bi bi-download"></i> Resume
+            </a>
           </div>
           <div class="header__mobile">
             <button id="navigation-button">
@@ -57,20 +65,25 @@
     </header>
 
     <!-- Hero Section -->
-
     <section class="hero">
       <div class="container">
         <div class="hero__wrapper">
           <h1 class="hero__title animate__animated animate__slideInDown">
-            Kwibisa Mwene<br />
-            Software Developer.
+            i craft ideas into <br />
+            apps and sites that work
           </h1>
           <p class="hero__content animate__animated animate__slideInDown">
-            Providing services for Web and Mobile App development. <br>
-            Get in touch below, or contact me above.
+            hi, im kwibisa mwene and im software developer currently exploring
+            my way around the amazing world of web and mobile app development.
+            Join me below or contact me above.
           </p>
-          
-        
+
+          <div class="hero__img">
+            <!-- <div class="hero__imgCircle animate__animated animate__slideInUp">
+              <img src="assets/profile.jpg" alt="Profile Picture" />
+            </div> -->
+          </div>
+
           <div class="hero__social animate__animated animate__slideInUp">
             <ul class="social">
               <li>
@@ -82,6 +95,12 @@
                 <a href="https://github.com/kwibisam"
                   ><i class="bi bi-github"></i
                 ></a>
+              </li>
+              <li>
+                <a href="#"><i class="bi bi-twitter"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="bi bi-facebook"></i></a>
               </li>
             </ul>
           </div>
@@ -97,27 +116,48 @@
       <div class="container">
         <div class="section__header section__header--center">
           <h2 class="section__title">Portfolio</h2>
-          <p class="section__subtitle">Technical Projects</p>
+          <p class="section__subtitle">Some Things I’ve Built</p>
         </div>
         <div class="portfolio">
           <div class="portfolio__box">
             <div class="portfolio__img">
-              <img src="assets/port-02.PNG" alt="Portfolio Items" />
+              <img src="assets/portfolio-01.jpg" alt="Portfolio Items" />
             </div>
             <div class="portfolio__info">
-              <h3 class="portfolio__title">Path Finding Visualiser</h3>
+              <h3 class="portfolio__title">ecommerce website</h3>
               <p class="portfolio__content">
-                A JavaScript application visualising four different path finding
-                algorithms; A*, Dijkstra, DFS and BFS
+                Online store website with react frontend and express js with
+                mongo db backend. The website features a homepage showing items
+                for sale, login to place an order and payment with paypal.
               </p>
-              <a class="portfolio__link" href="https://kwibisam.github.io/algovis/"
+              <a
+                class="portfolio__link"
+                href="https://github.com/kwibisam/emart"
                 >See Work <i class="bi bi-arrow-right"></i
               ></a>
             </div>
           </div>
           <div class="portfolio__box">
             <div class="portfolio__img">
-              <img src="assets/port-01.PNG" alt="Portfolio Items" />
+              <img src="assets/portfolio-02.jpg" alt="Portfolio Items" />
+            </div>
+            <div class="portfolio__info">
+              <h3 class="portfolio__title">Path Finder Visualiser</h3>
+              <p class="portfolio__content">
+                javascript application that visualises 4 different path finding
+                algorithms; BFS, DFS, A* and Dijkstra. additionaly generates a
+                maze.
+              </p>
+              <a
+                class="portfolio__link"
+                href="https://github.com/kwibisam/algovis"
+                >See Work <i class="bi bi-arrow-right"></i
+              ></a>
+            </div>
+          </div>
+          <div class="portfolio__box">
+            <div class="portfolio__img">
+              <img src="assets/portfolio-04.jpg" alt="Portfolio Items" />
             </div>
             <div class="portfolio__info">
               <h3 class="portfolio__title">Movies API</h3>
@@ -126,27 +166,20 @@
                 JS frontend. UI with bootstrap. The app features a homepage,
                 seach bar and a details page with more features to be added.
               </p>
-              <a class="portfolio__link" href="https://github.com/kwibisam/movies-api"
-                >See Work <i class="bi bi-arrow-right"></i
-              ></a>
-            </div>
-          </div>
-
-          <div class="portfolio__box">
-            <div class="portfolio__img">
-              <img src="assets/port -03.jpg" alt="Portfolio Items" />
-            </div>
-            <div class="portfolio__info">
-              <h3 class="portfolio__title">Music Player</h3>
-              <p class="portfolio__content">
-                Simple android music player app built in Java.
-              </p>
-              <a class="portfolio__link" href="https://github.com/kwibisam/musicplayer"
+              <a
+                class="portfolio__link"
+                href="https://github.com/kwibisam/movies-api"
                 >See Work <i class="bi bi-arrow-right"></i
               ></a>
             </div>
           </div>
         </div>
+        <!-- <div class="section__footer">
+          <a href="#contact">
+            Ask for More Projects
+            <i class="bi bi-arrow-right"></i>
+          </a>
+        </div> -->
       </div>
     </section>
 
@@ -160,22 +193,18 @@
               <p class="section__subtitle">Few things about me</p>
             </div>
             <p class="about__bio">
-              Im a Computer Science graduate from Mulungushi University
-              specialised in Software Development. Ive been working on some
-              personal projects since completion in July 2022 to kick start some
-              freelance work.
+              Im a graduate of Computer Science class of november 2022. Highly
+              passionate about software engineering and my goal is to craft
+              ideas into apps and sites that work following best practices and
+              design patterns.
             </p>
             <h4 class="about__skillsTitle">Skills</h4>
             <ul class="about__skillsList">
-              <li>Java</li>
               <li>Python</li>
-              <li>Spring Boot</li>
-              <li>Django</li>
-              <li>C#</li>
-              <li>.NET</li>
-              <li>React</li>
-              <li>JavaScript</li>
-              <li>TypeScript</li>
+              <li>Java</li>
+              <li>javascript</li>
+              <li>machine learning</li>
+              <li>figma</li>
             </ul>
           </div>
           <div class="about__right">
@@ -184,6 +213,8 @@
         </div>
       </div>
     </section>
+
+    <!-- Testimonials Section -->
 
     <!-- Contact Section -->
     <section class="section" id="contact">
@@ -197,12 +228,6 @@
             <div class="contact__info">
               <p>Email Me:</p>
               <a href="mailto:">kwibisam04@gmail.com</a>
-              <a href="tel:0967433734"></a>
-            </div>
-
-            <div class="contact__info">
-              <p>Call or WhatsApp:</p>
-              <a href="tel:">0967433734</a>
             </div>
 
             <div class="contact__info">
@@ -221,8 +246,8 @@
               </ul>
             </div>
           </div>
-          <div class="contact__right">
-            <form class="contact__form" action="#" method="post">
+          <!-- <div class="contact__right">
+            <form class="contact__form" action="" method="post">
               <div class="contact__fields">
                 <label for="name">Name</label>
                 <input
@@ -255,16 +280,14 @@
                 </button>
               </div>
             </form>
-          </div>
+          </div> -->
         </div>
       </div>
     </section>
 
     <footer class="footer">
       <div class="footer__copyright">
-        <p>
-          <a href="https://github.com/kwibisam">kwibisam</a>
-        </p>
+        <p><a href="https://github.com/kwibisam">kwibisam</a></p>
       </div>
     </footer>
 
